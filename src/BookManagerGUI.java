@@ -20,7 +20,7 @@ public class BookManagerGUI {
         JTabbedPane tabbedPane = new JTabbedPane();
 
         tabbedPane.addTab("添加图书", Add());
-        tabbedPane.addTab("管理图书", createManagePanel());
+        tabbedPane.addTab("管理图书", manage());
         tabbedPane.addTab("查询图书", Search());
 
         frame.add(tabbedPane, BorderLayout.CENTER);
@@ -73,7 +73,7 @@ public class BookManagerGUI {
         return panel;
     }
 
-    private JPanel createManagePanel() {
+    private JPanel manage() {
         JPanel panel = new JPanel(new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
